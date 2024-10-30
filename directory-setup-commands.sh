@@ -6,11 +6,10 @@
 ## making directories
 
 mkdir -p data/original
-mkdir data/derived
-
-mkdir code
-
-mkdir results
+mkdir -p data/derived
+mkdir -p code
+mkdir -p results
+mkdir -p logs
 
 
 ##
@@ -18,9 +17,10 @@ mkdir results
 
 mv ~/Downloads/BMX_D.csv data/original
 mv ~/Downloads/accel.zip data/original
+mv ~/Downloads/DEMO_D.XPT data/original
 
 # extract the acclerometer data from the zip file
-unzip -d data/original data/accel.zip
+unzip -d data/original data/original/accel.zip
 
 # describe the data in a readme file
 cd code
