@@ -17,3 +17,14 @@ As part of the formative assessment we will be building our code repository over
 3. Download the data from Blackboard, this includes two files `accel.zip` and `BMX_D.csv`.
 4. Run `bash directory-setup-commands.sh` to setup the data directory etc.
 
+You should have the following folder structure:
+
+```
+data/
+     original/
+              accel/
+                    accel-31128.txt
+                    accel-31129.txt
+                    ...
+              BMX_D.csv
+```
