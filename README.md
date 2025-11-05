@@ -28,3 +28,16 @@ data/
                     ...
               BMX_D.csv
 ```
+
+Setup the conda environment
+
+```
+conda env create --file ahds_formative_environment.yml
+```
+
+or if the environment already exists
+
+```
+conda env update --file ahds_formative_environment.yml
+```
+
