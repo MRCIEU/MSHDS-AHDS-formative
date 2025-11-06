@@ -4,6 +4,7 @@ channels:
   - bioconda
   - defaults
 dependencies:
+  - snakemake
   - r-base=4.4.3
   - r-tidyverse=2.0.0
   - r-haven=2.5.5
