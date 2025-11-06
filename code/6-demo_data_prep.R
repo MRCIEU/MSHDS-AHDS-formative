@@ -11,6 +11,8 @@ demo_data <- read_xpt("../data/original/DEMO_D.XPT")
 
 # View(demo_data)
 
+# random comment
+
 # Select participant ID, gender, age in months, ethnicity
 demog <- demo_data |> 
   select(SEQN, RIAGENDR, RIDAGEMN, RIDRETH1)
