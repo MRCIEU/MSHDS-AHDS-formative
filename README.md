@@ -43,6 +43,14 @@ conda env update --file ahds_formative_environment.yml --prune
 
 ## To run
 
+Activate the conda environment
+
+```
+conda activate ahds_formative
+```
+
+Then run the analysis
+
 ```
 cd code
 bash 1-data-check-bm.sh
