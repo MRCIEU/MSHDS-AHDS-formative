@@ -41,3 +41,17 @@ or if the environment already exists
 conda env update --file ahds_formative_environment.yml --prune
 ```
 
+## To run
+
+Use snakemake e.g. with just 1 core
+
+```
+conda activate ahds_formative
+snakemake -c1
+```
+
+To check things with a dry run use:
+
+```
+snakemake -n
+```
