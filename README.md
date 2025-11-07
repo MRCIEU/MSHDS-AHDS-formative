@@ -28,3 +28,14 @@ data/
                     ...
               BMX_D.csv
 ```
+
+## To run
+
+```
+cd code
+bash 1-data-check-bm.sh
+bash 2-data-check-accel.sh
+bash 3-data-fix-accel.sh
+bash 4-list-accel-ids.sh
+Rscript 5-generate-sample.R
+```
