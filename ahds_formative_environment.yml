@@ -1,0 +1,7 @@
+name: ahds_formative
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - r-base=4.4.3
+prefix: /opt/anaconda3/envs/ahds_formative
