@@ -51,5 +51,4 @@ bash 2-data-check-accel.sh
 bash 3-data-fix-accel.sh
 bash 4-list-accel-ids.sh
 Rscript 5-generate-sample.R
-Rscript 6-demo_data_prep.R
 ```
