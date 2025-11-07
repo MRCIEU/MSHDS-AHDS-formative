@@ -41,8 +41,15 @@ or if the environment already exists
 conda env update --file ahds_formative_environment.yml --prune
 ```
 
-
 ## To run
+
+Activate the conda environment
+
+```
+conda activate ahds_formative
+```
+
+Then run the analysis
 
 ```
 cd code
