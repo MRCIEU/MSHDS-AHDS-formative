@@ -8,5 +8,5 @@ dependencies:
   - r-tidyverse=2.0.0
   - r-haven=2.5.5
   - r-janitor=2.2.1
-  - snakemake
+  - snakemake=7.26
 prefix: /opt/anaconda3/envs/ahds_formative
