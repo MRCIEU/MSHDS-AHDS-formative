@@ -60,3 +60,13 @@ To check things with a dry run use:
 ```
 snakemake -n
 ```
+
+## Parallel
+
+The `Snakefile-batches` pipeline splits the accel files into around 10 batches. It does this by taking the first two digits of the `accel-<id>` ID number to represent its batch. It uses modified versions of scripts `2-data-check-accel.sh` and `3-data-fix-accel.sh` that take a batch argument which specifies which files to include in the analysis.
+
+To run using e.g. 4 cores:
+
+```
+snakemake -s Snakefile-batches -c4
+```
