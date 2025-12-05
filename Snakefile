@@ -87,6 +87,7 @@ rule make_sample:
     output:
         "data/derived/sample.csv",
         "logs/5-generate-sample.log"
+    conda: "ahds_formative"
     shell:
         """
         cd code
