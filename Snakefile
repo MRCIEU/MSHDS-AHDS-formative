@@ -3,14 +3,12 @@ import re
 
 # # Get the list of pid values from the filenames in data/original/accel/
 accel_files = glob.glob("data/original/accel/accel-*.txt")
-# ACC_PID = [int(re.search(r"accel-(\d+).txt", f).group(1)) for f in accel_files]
-
-DATADIR="data/prototype"
+ACC_PID = [int(re.search(r"accel-(\d+).txt", f).group(1)) for f in accel_files]
 
 
 # To keep things a bit simpler, we can hard-code a small list of participant IDs instead of reading in every participant ID from the filenames as above
 # This will mean that if any of the accelerometer data files change or some or added or removed then snakemake won't know to re-run the pipeline
-ACC_PID = [31128, 31129, 31131, 31132, 31133, 31134, 31137]
+# ACC_PID = [31128, 31129, 31131, 31132, 31133, 31134, 31137]
 
 rule all:
     input:
@@ -110,13 +108,11 @@ rule merge_data:
     output:
         "data/derived/body_measurements.csv",
         "logs/6-demo_data_prep.log"
-    conda: "ahds_formative"
     shell:
         """
         cd code
         Rscript 6-demo_data_prep.R > ../logs/6-demo_data_prep.log
         """
-
 
 rule clean:
     shell:
